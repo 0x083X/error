@@ -11,22 +11,13 @@
   "dependencies": {
     "@tsign/eslint-config-esign": "^3.0.4-beta.2",
     "eslint": "7",
-    "stylelint": "10",
     "vue": "^3.4.29"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
-    "lint-staged": "^15.2.7",
-    "vite": "^5.3.1",
-    "yorkie": "^2.0.0"
+    "vite": "^5.3.1"
   },
   "eslintConfig": {
     "extends": "@tsign/eslint-config-esign/common"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "post-commit": "git update-index --again",
-    "commit-msg": "node verifyCommitMsg.js"
-  },
-  "lint-staged": {}
+  }
 }
